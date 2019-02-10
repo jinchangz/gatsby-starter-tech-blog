@@ -27,6 +27,18 @@ export const PostWrapper = styled.div`
    * change .markdown into .gatsby-highlight
    * remove .hljs- prefix
    */
+  .gatsby-code-title {
+    background: #193549;
+    color: #fff;
+    margin-bottom: -0.65em;
+    padding: 0.9rem 1.05rem;
+    font-size: 0.9em;
+    line-height: 0.2;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    font-weight: 600;
+    border-radius: 8px 8px 0 0;
+    display: table;
+  }
   .gatsby-highlight-code-line {
     background-color: #222;
     display: list-item;
@@ -34,7 +46,7 @@ export const PostWrapper = styled.div`
     margin-left: -1em;
     padding-right: 1em;
     padding-left: 0.75em;
-    border-left: 0.25em solid #f99;
+    border-left: 0.25em solid lawngreen;
   }
   .gatsby-highlight {
 
@@ -49,52 +61,22 @@ export const PostWrapper = styled.div`
   .gatsby-highlight pre {
     display: block;
     position: relative;
-    padding: 20px 0 0;
+    padding: 10px 0 0;
     background: #193549;
     color: #dcdcdc;
     border-radius: 5px;
     overflow-y: hidden;
   }
-  .gatsby-highlight pre:before {
-    display: inline-block;
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    width: 10px;
-    height: 10px;
-    background-color: #ff5f56;
-    border-radius: 50%;
-    content: '';
-  }
-  .gatsby-highlight pre:after {
-    display: inline-block;
-    position: absolute;
-    top: 15px;
-    left: 40px;
-    width: 10px;
-    height: 10px;
-    background-color: #ffbd2e;
-    border-radius: 50%;
-    content: '';
-  }
-  .gatsby-highlight pre code:before {
-    display: inline-block;
-    position: absolute;
-    top: 15px;
-    left: 60px;
-    width: 10px;
-    height: 10px;
-    background-color: #27c93f;
-    border-radius: 50%;
-    content: '';
-  }
+
+
+
   .gatsby-highlight pre code {
     background: none;
     border: none;
     border-radius: 3px;
     display: block;
     overflow: inherit;
-    padding: 1.58333rem;
+    padding: 1rem;
     white-space: inherit;
     word-wrap: normal;
     font-family: Inconsolata, monospace;
