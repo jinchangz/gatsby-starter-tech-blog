@@ -27,6 +27,25 @@ export const PostWrapper = styled.div`
    * change .markdown into .gatsby-highlight
    * remove .hljs- prefix
    */
+  .gatsby-highlight-code-line {
+    background-color: #222;
+    display: list-item;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 0.75em;
+    border-left: 0.25em solid #f99;
+  }
+  .gatsby-highlight {
+
+  }
+  
+  .gatsby-highlight pre[class*="language-"] {
+
+  }
+  .gatsby-highlight pre[class*="language-"].line-numbers {
+
+  }
   .gatsby-highlight pre {
     display: block;
     position: relative;
@@ -73,7 +92,7 @@ export const PostWrapper = styled.div`
     background: none;
     border: none;
     border-radius: 3px;
-    display: inline-block;
+    display: block;
     overflow: inherit;
     padding: 1.58333rem;
     white-space: inherit;
