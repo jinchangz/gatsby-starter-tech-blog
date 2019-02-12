@@ -1,10 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: 'Tech Blog',
-    siteDescription: 'Tech Blog - A blog by Vimalraj Selvam',
-    authorName: 'Vimalraj Selvam'
+    title: 'Develogger',
+    siteDescription: 'Tech Blog - A blog ',
+    authorName: 'Jinchangz'
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+          options: {
+              name: `images`,
+              path: `${__dirname}/src/images`,
+          },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+
+    
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
