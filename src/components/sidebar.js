@@ -1,13 +1,7 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
-import {
-  FaHome,
-  FaUserSecret,
-  FaLinkedin,
-  FaGithub,
-  FaHashtag
-} from 'react-icons/fa'
+import { Link } from 'gatsby';
+import React from 'react';
+import { FaGithub, FaHashtag, FaHome, FaLinkedin, FaUserSecret } from 'react-icons/fa';
+import styled from 'styled-components';
 
 const Sidebar = styled.div`
   /* Device = Tablets, iPads (portrait) */

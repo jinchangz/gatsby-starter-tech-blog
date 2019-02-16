@@ -59,7 +59,7 @@ export const PostWrapper = styled.div`
 
   }
   .gatsby-highlight pre {
-    display: block;
+    display: grid;
     position: relative;
     padding: 10px 0 0;
     background: #193549;
